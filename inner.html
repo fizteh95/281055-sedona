@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Городок Седона</title>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li class="site-navigation__info">
+					<a href="info.html">Информация</a>
+				</li>
+				<li class="site-navigation__photo">
+					<a href="photo.html">Фото и видео</a>
+				</li>
+				<li class="site-navigation__map">
+					<a href="map.html">Карта штата</a>
+				</li>
+				<li class="site-navigation__hotels">
+					<a href="hotels.html">Гостиницы</a>
+				</li>
+			</ul>
+			<a class="main-header-logo">
+                <img src="triangle.svg" width="368" height="153" alt="Центральный треугольник">
+            </a>
+		</nav>
+	</header>
+	<main class="container">
+		<section class="container__choose">
+			<div class="container__choose__infra">
+				<h2 class="container__choose__infra__head">инфраструктура:</h2>
+				<ul class="container__choose__infra__list">
+					<li class="container__choose__infra__item container__choose__infra__item--checked">бассейн</li>
+					<li class="container__choose__infra__item container__choose__infra__item--unchecked">парковка</li>
+					<li class="container__choose__infra__item container__choose__infra__item--unchecked">wi-fi</li>
+				</ul>
+			</div>
+			<div class="container__choose__type">
+				<h2 class="container__choose__type__head">тип жилья:</h2>
+				<ul class="container__choose__type__list">
+					<li class="container__choose__type__item container__choose__type__item--checked">гостиница</li>
+					<li class="container__choose__type__item container__choose__type__item--checked">мотель</li>
+					<li class="container__choose__type__item container__choose__type__item--checked">апартаменты</li>
+				</ul>
+			</div>
+			<div class="container__choose__cost">
+				<h2 class="container__choose__cost_head">стоимость в сутки (р):</h2>
+				<!--олжна быть форма-->
+			</div>
+		</section>
+		<section class="container__find">
+			<h1 class="container__find__head">найдено:</h1>
+			<span class="container__find_amount">3</span>
+			<p class="container__find__sorttext">сортировка</p>
+			<ul class="container__find__type">
+				<li class="container__find__type__item container__find__type__item--checked">о цене</li>
+				<li class="container__find__type__item container__find__type__item--unchecked">о типу</li>
+				<li class="container__find__type__item container__find__type__item--unchecked">о рейтингу</li>
+			</ul>
+			<button class="container__find__arrowup container__find__arrow--checked">вверх</button>
+			<button class="container__find__arrowdown container__find__arrow--checked">вниз</button>
+		</section>
+		<section class="container__result">
+			<div class="container__result__item">
+				<img class="container__result__item__img" src="amara.svg" width="368" height="153" alt="Amara">
+				<h2 class="container__result__item__head">amara resort & spa</h2>
+				<span class="container__result__item__type">гостиница</span>
+				<span class="container__result__item__price">от 4000 р.</span>
+				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
+				<a class="container__result__item__button container__result__item__button--bron" href="#">забронировать</a>
+				<div class="container__result__item__ratestars">4 stars</div>
+				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
+				<span class="container__result__item__amountrate">8,5</span>
+			</div>
+			<div class="container__result__item">
+				<img class="container__result__item__img" src="desert.svg" width="368" height="153" alt="Desert">
+				<h2 class="container__result__item__head">desert quail inn</h2>
+				<span class="container__result__item__type">мотель</span>
+				<span class="container__result__item__price">от 3000 р.</span>
+				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
+				<a class="container__result__item__button container__result__item__button--bron" href="#">забронировать</a>
+				<div class="container__result__item__ratestars">3 stars</div>
+				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
+				<span class="container__result__item__amountrate">8,9</span>
+			</div>
+			<div class="container__result__item">
+				<img class="container__result__item__img" src="villas.svg" width="368" height="153" alt="Villas">
+				<h2 class="container__result__item__head">villas at poco diablo</h2>
+				<span class="container__result__item__type">апартаменты</span>
+				<span class="container__result__item__price">от 2000 р.</span>
+				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
+				<a class="container__result__item__button container__result__item__button--bron" href="#">забронировать</a>
+				<div class="container__result__item__ratestars">2 stars</div>
+				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
+				<span class="container__result__item__amountrate">9,2</span>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<p class="footer__tag">#visitsedona</p>
+		<ul class="footer__social">
+			<a class="footer__social__logo footer__social__logo--twitter" href="twitter">
+				Твиттер
+			</a>
+			<a class="footer__social__logo footer__social__logo--facebook" href="facebook">
+				Фейсбук
+			</a>
+			<a class="footer__social__logo footer__social__logo--youtube" href="youtube">
+				Ютуб
+			</a>
+		</ul>
+	    <p class="footer__copyright">
+	        Website by <a class="button" href="#">html<br>
+	        academy</a>
+		</p>
+	</footer>
+</body>
