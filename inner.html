@@ -23,12 +23,12 @@
 				</li>
 			</ul>
 			<a class="main-header-logo">
-                <img src="triangle.svg" width="368" height="153" alt="Центральный треугольник">
+                <img src="img/triangle1.png" width="138" height="70" alt="Центральный треугольник">
             </a>
 		</nav>
 	</header>
 	<main class="container">
-		<section class="container__choose">
+		<!--<section class="container__choose">
 			<div class="container__choose__infra">
 				<h2 class="container__choose__infra__head">инфраструктура:</h2>
 				<ul class="container__choose__infra__list">
@@ -47,51 +47,117 @@
 			</div>
 			<div class="container__choose__cost">
 				<h2 class="container__choose__cost_head">стоимость в сутки (р):</h2>
-				<!--олжна быть форма-->
+				
 			</div>
 		</section>
+		-->
+
+
+
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-infrastructure">
+                    <legend class="filter-title">Инфраструктура</legend>
+                    <ul class="filter-checkbox">
+                        <li>
+                            <input id="filter-pool" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input id="filter-parking" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input id="filter-wi-fi" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
+                            <label for="filter-wi-fi">WI-FI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-type-housing">
+                    <legend class="filter-title">Тип жилья</legend>
+                    <ul class="filter-checkbox">
+                        <li>
+                            <input id="filter-guesthouse" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="guesthouse" checked>
+                            <label for="filter-guesthouse">Гостиница</label>
+                        </li>
+                        <li>
+                            <input id="filter-motel" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input id="filter-apartments" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+                            <label for="filter-apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-cost-day">
+                    <legend class="filter-title">Стоимость в сутки (Р):</legend>
+                    <label for="filter-cost-day-min"></label>
+                    <input id="filter-cost-day-min" type="search" name="filter-cost-day-min" value="от 0" min="0" max="6000">
+                    <label for="filter-cost-day-max"></label>
+                    <input id="filter-cost-day-max" type="search" name="filter-cost-day-max" value="до 3000" min="0" max="6000">
+                    <input type="range" name="filter-cost-day-min">
+                    <input type="range" name="filter-cost-day-max">
+
+                    <!--здесь <input type="range" name="filter-cost-day-min">
+                    <input type="range" name="filter-cost-day-max"> или
+
+                живая картинка, состоящая из двух 
+                    кружков-кнопок
+                    <button> <img src="filter-button.svg" alt="стоимость жилья в сутки,  минимальное предпочтительное значение"></button>
+             <button> <img src="filter-button.svg" alt="стоимость жилья в сутки,  максимальное предпочтительное значение"></button>
+                    , бегущих по палочке, и чудным образом связанная с <input type="search" name="filter-cost-day-min" value="от 0" min="0" max="6000">
+                   <input type="search" name="filter-cost-day-max" value="до 3000" min="0" max="6000">???-->
+
+                    <button class="filter-cost-day-button" type="submit">Показать</button>
+                    <!--здесь <button type="submit">Показать</button> или <input type="submit"???-->
+                </fieldset>
+            </form>
+
+
+
+
 		<section class="container__find">
 			<h1 class="container__find__head">найдено:</h1>
 			<span class="container__find_amount">3</span>
 			<p class="container__find__sorttext">сортировка</p>
 			<ul class="container__find__type">
-				<li class="container__find__type__item container__find__type__item--checked">о цене</li>
-				<li class="container__find__type__item container__find__type__item--unchecked">о типу</li>
-				<li class="container__find__type__item container__find__type__item--unchecked">о рейтингу</li>
+				<li class="container__find__type__item container__find__type__item--checked">по цене</li>
+				<li class="container__find__type__item container__find__type__item--unchecked">по типу</li>
+				<li class="container__find__type__item container__find__type__item--unchecked">по рейтингу</li>
 			</ul>
 			<button class="container__find__arrowup container__find__arrow--checked">вверх</button>
 			<button class="container__find__arrowdown container__find__arrow--checked">вниз</button>
 		</section>
 		<section class="container__result">
 			<div class="container__result__item">
-				<img class="container__result__item__img" src="amara.svg" width="368" height="153" alt="Amara">
+				<img class="container__result__item__img" src="img/amara.jpg" width="135" height="90" alt="Amara">
 				<h2 class="container__result__item__head">amara resort & spa</h2>
 				<span class="container__result__item__type">гостиница</span>
 				<span class="container__result__item__price">от 4000 р.</span>
 				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<a class="container__result__item__button container__result__item__button--bron" href="#">забронировать</a>
+				<button class="container__result__item__button container__result__item__button--bron" type="submit">Забронировать</button>
 				<div class="container__result__item__ratestars">4 stars</div>
 				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
 				<span class="container__result__item__amountrate">8,5</span>
 			</div>
 			<div class="container__result__item">
-				<img class="container__result__item__img" src="desert.svg" width="368" height="153" alt="Desert">
+				<img class="container__result__item__img" src="img/desert.jpg" width="135" height="90" alt="Desert">
 				<h2 class="container__result__item__head">desert quail inn</h2>
 				<span class="container__result__item__type">мотель</span>
 				<span class="container__result__item__price">от 3000 р.</span>
 				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<a class="container__result__item__button container__result__item__button--bron" href="#">забронировать</a>
+				<button class="container__result__item__button container__result__item__button--bron" type="submit">Забронировать</button>
 				<div class="container__result__item__ratestars">3 stars</div>
 				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
 				<span class="container__result__item__amountrate">8,9</span>
 			</div>
 			<div class="container__result__item">
-				<img class="container__result__item__img" src="villas.svg" width="368" height="153" alt="Villas">
+				<img class="container__result__item__img" src="img/villas.jpg" width="135" height="90" alt="Villas">
 				<h2 class="container__result__item__head">villas at poco diablo</h2>
 				<span class="container__result__item__type">апартаменты</span>
 				<span class="container__result__item__price">от 2000 р.</span>
 				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<a class="container__result__item__button container__result__item__button--bron" href="#">забронировать</a>
+				<button class="container__result__item__button container__result__item__button--bron" type="submit">Забронировать</button>
 				<div class="container__result__item__ratestars">2 stars</div>
 				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
 				<span class="container__result__item__amountrate">9,2</span>
@@ -101,18 +167,18 @@
 	<footer class="footer">
 		<p class="footer__tag">#visitsedona</p>
 		<ul class="footer__social">
-			<a class="footer__social__logo footer__social__logo--twitter" href="twitter">
+			<a class="footer__social__logo footer__social__logo--twitter" href="https://twitter.com">
 				Твиттер
 			</a>
-			<a class="footer__social__logo footer__social__logo--facebook" href="facebook">
+			<a class="footer__social__logo footer__social__logo--facebook" href="https://www.facebook.com">
 				Фейсбук
 			</a>
-			<a class="footer__social__logo footer__social__logo--youtube" href="youtube">
+			<a class="footer__social__logo footer__social__logo--youtube" href="https://youtube.com">
 				Ютуб
 			</a>
 		</ul>
 	    <p class="footer__copyright">
-	        Website by <a class="button" href="#">html<br>
+	        Website by <a class="button" href="https://htmlacademy.ru/">html<br>
 	        academy</a>
 		</p>
 	</footer>

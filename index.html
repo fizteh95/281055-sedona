@@ -10,26 +10,29 @@
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li class="site-navigation__info">
-					<a href="info.html">Информация</a>
+					<a href="#">Информация</a>
 				</li>
 				<li class="site-navigation__photo">
-					<a href="photo.html">Фото и видео</a>
+					<a href="#">Фото и видео</a>
 				</li>
 				<li class="site-navigation__map">
-					<a href="map.html">Карта штата</a>
+					<a href="#">Карта штата</a>
 				</li>
 				<li class="site-navigation__hotels">
-					<a href="hotels.html">Гостиницы</a>
+					<a href="inner.html">Гостиницы</a>
 				</li>
 			</ul>
 			<a class="main-header-logo">
-                <img src="triangle.svg" width="368" height="153" alt="Центральный треугольник">
+                <img src="img/triangle1.png" width="138" height="70" alt="Центральный треугольник">
             </a>
 		</nav>
 	</header>
 	<main class="container">
 	    <section class="container__introduction">
-	        <img class="container__welcome-sedona" width="3" height="5" alt="Sedona-view">
+	    	<img class="container__introduction__back" src="img/background.JPG" width="1200" height="773" alt="to the gorgeous">
+	        <img class="container__introduction__welcome" src="img/welcome_to_the.png" width="256" height="86" alt="to the gorgeous">
+            <h1>Sedona</h1>
+            <img class="container__introduction__because" src="img/сanyon_sucks.png" width="296" height="80" alt="because the grand canyon sucks!">
 	        <p class="container__definition">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
     	</section>	
 		<h2>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
@@ -39,7 +42,7 @@
 				<p class="features__item__number">-№1-</p>
 				<p class="features__item__text">седона - не аттракцион для туристов, там течет соя жизнь</p>
 			</div>
-			<img class="features__img features__img--right" src="open_range.svg" width="368" height="153" alt="Open Range">
+			<img class="features__img features__img--right" src="img/open_range.jpg" width="800" height="401" alt="Open Range">
 			<div class="features__plushka features__plushka--house">
 				<h3 class="features__plushka__header">жилье</h3>
 				<p class="features__plushka__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -52,7 +55,7 @@
 				<h3 class="features__plushka__header">сувениры</h3>
 				<p class="features__plushka__text">не только китайского, но и местного производства!</p>
 			</div>
-            <img class="features__img features__img--left" src="canyon.svg" width="368" height="153" alt="Canyon">
+            <img class="features__img features__img--left" src="img/canyon.jpg" width="800" height="400" alt="Canyon">
             <div class="features__item features__item--blue">
 				<h3 class="features__item__header">там есть мост дъявола</h3>
 				<p class="features__item__number">-№2-</p>
@@ -78,25 +81,46 @@
    			<h2 class="interest__header">заинтересовались?</h2>
    			<p class="interest__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<a class="interest__map__a" href="#">
-				<img class="interest__map" src="map.svg" width="368" height="153" alt="Map">
+				<img src="img/map.jpg" width="1280" height="747" alt="Адреса гостиниц в Седоне">
 			</a>
-			<!-- Здесь будет форма -->
+			<form class="interst__form" method="post" action="https://echo.htmlacademy.ru">
+                <div class="interst__form__div>
+                    <h2 class="interst__form__head">Поиск гостиницы в Седоне</h2>
+                </div>
+                <label for="interst__form__arrival">Дата заезда
+                    <input id="interst__form__arrival" type="date" name="date">
+                </label>
+                <label for="interst__form__leaving">Дата выезда
+                    <input id="interst__form__leaving" type="date" name="date">
+                </label>
+                <label for="interst__form__adult">Взрослые
+					<button type="button" href="#">-</button>
+                   <input id="interst__form__adult" type="text" name="text">
+					<button type="button" href="#">+</button>
+                </label>
+                <label for="interst__form__children">Дети
+                   <button type="button" href="#">-</button>
+                   <input id="interst__form__adult" type="text" name="text">
+					<button type="button" href="#">+</button>
+                </label>
+                <button type="submit" name="search">Найти</button>
+            </form>
    		</section>
 		<footer class="footer">
 			<p class="footer__tag">#visitsedona</p>
 			<ul class="footer__social">
-				<a class="footer__social__logo footer__social__logo--twitter" href="twitter">
+				<a class="footer__social__logo footer__social__logo--twitter" href="https://twitter.com">
 					Твиттер
 				</a>
-				<a class="footer__social__logo footer__social__logo--facebook" href="facebook">
+				<a class="footer__social__logo footer__social__logo--facebook" href="https://www.facebook.com">
 					Фейсбук
 				</a>
-				<a class="footer__social__logo footer__social__logo--youtube" href="youtube">
+				<a class="footer__social__logo footer__social__logo--youtube" href="https://youtube.com">
 					Ютуб
 				</a>
 			</ul>
 			    <p class="footer__copyright">
-			        Website by <a class="button" href="#">html<br>
+			        Website by <a class="button" href="https://htmlacademy.ru/">html<br>
 			        academy</a>
 		   		 </p>
 		</footer>
