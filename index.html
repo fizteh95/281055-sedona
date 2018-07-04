@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Городок Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li class="site-navigation__info">
+				<li class="site-navigation__info site-navigation--active">
 					<a href="#">Информация</a>
 				</li>
 				<li class="site-navigation__photo">
@@ -31,11 +33,12 @@
 	    <section class="container__introduction">
 	    	<img class="container__introduction__back" src="img/background.JPG" width="1200" height="773" alt="to the gorgeous">
 	        <img class="container__introduction__welcome" src="img/welcome_to_the.png" width="256" height="86" alt="to the gorgeous">
-            <h1>Sedona</h1>
+            <h1 class="container__sedona">Sedona</h1>
             <img class="container__introduction__because" src="img/сanyon_sucks.png" width="296" height="80" alt="because the grand canyon sucks!">
+            <img class="container__introduction__shape" src="img/Shape.png" width="1200" height="57" alt="">
 	        <p class="container__definition">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
     	</section>	
-		<h2>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
+		<h2 class="definition__head">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
 		<section class="features">
 			<div class="features__item features__item--blue">
 				<h3 class="features__item__header">настоящий городок</h3>
@@ -84,7 +87,7 @@
 				<img src="img/map.jpg" width="1280" height="747" alt="Адреса гостиниц в Седоне">
 			</a>
 			<form class="interst__form" method="post" action="https://echo.htmlacademy.ru">
-                <div class="interst__form__div>
+                <div class="interst__form__div">
                     <h2 class="interst__form__head">Поиск гостиницы в Седоне</h2>
                 </div>
                 <label for="interst__form__arrival">Дата заезда
@@ -95,15 +98,15 @@
                 </label>
                 <label for="interst__form__adult">Взрослые
 					<button type="button" href="#">-</button>
-                   <input id="interst__form__adult" type="text" name="text">
+                   <input id="interst__form__adult" type="text" name="text" value="2">
 					<button type="button" href="#">+</button>
                 </label>
                 <label for="interst__form__children">Дети
                    <button type="button" href="#">-</button>
-                   <input id="interst__form__adult" type="text" name="text">
+                   <input id="interst__form__children" type="text" name="text" value="0">
 					<button type="button" href="#">+</button>
                 </label>
-                <button type="submit" name="search">Найти</button>
+                <button class="search-button" type="submit" name="search">Найти</button>
             </form>
    		</section>
 		<footer class="footer">
@@ -120,8 +123,10 @@
 				</a>
 			</ul>
 			    <p class="footer__copyright">
-			        Website by <a class="button" href="https://htmlacademy.ru/">html<br>
-			        academy</a>
+			        Website by 
+			        <a href="https://htmlacademy.ru/">
+			        	<img class="copyright" src="img/logo_name.png" width="115" height="41" alt="HTMLA">
+			        </a>
 		   		 </p>
 		</footer>
 	</main>

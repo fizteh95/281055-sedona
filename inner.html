@@ -4,22 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title>Городок Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li class="site-navigation__info">
-					<a href="info.html">Информация</a>
+					<a href="index.html">Информация</a>
 				</li>
 				<li class="site-navigation__photo">
-					<a href="photo.html">Фото и видео</a>
+					<a href="#">Фото и видео</a>
 				</li>
 				<li class="site-navigation__map">
-					<a href="map.html">Карта штата</a>
+					<a href="#">Карта штата</a>
 				</li>
-				<li class="site-navigation__hotels">
-					<a href="hotels.html">Гостиницы</a>
+				<li class="site-navigation__hotels site-navigation--active">
+					<a href="#">Гостиницы</a>
 				</li>
 			</ul>
 			<a class="main-header-logo">
@@ -52,7 +54,7 @@
 		</section>
 		-->
 
-
+			<img src="img/filter_background.jpg" width="1200" height="562" alt="filter_background">
 
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset class="filter-infrastructure">
@@ -117,13 +119,18 @@
 
 
 		<section class="container__find">
-			<h1 class="container__find__head">найдено:</h1>
-			<span class="container__find_amount">3</span>
-			<p class="container__find__sorttext">сортировка</p>
+			<h1 class="container__find__head">найдено: <span class="container__find_amount">3</span></h1>
+			<p class="container__find__sorttext">сортировка:</p>
 			<ul class="container__find__type">
-				<li class="container__find__type__item container__find__type__item--checked">по цене</li>
-				<li class="container__find__type__item container__find__type__item--unchecked">по типу</li>
-				<li class="container__find__type__item container__find__type__item--unchecked">по рейтингу</li>
+				<a href="#">
+					<li class="container__find__type__item container__find__type__item--checked">по цене</li>
+				</a>
+				<a href="#">
+					<li class="container__find__type__item container__find__type__item--unchecked">по типу</li>
+				</a>
+				<a href="#">
+					<li class="container__find__type__item container__find__type__item--unchecked">по рейтингу</li>
+				</a>
 			</ul>
 			<button class="container__find__arrowup container__find__arrow--checked">вверх</button>
 			<button class="container__find__arrowdown container__find__arrow--checked">вниз</button>
@@ -131,36 +138,36 @@
 		<section class="container__result">
 			<div class="container__result__item">
 				<img class="container__result__item__img" src="img/amara.jpg" width="135" height="90" alt="Amara">
-				<h2 class="container__result__item__head">amara resort & spa</h2>
+				<a href="#" class="container__result__item__head">amara resort & spa</a>
 				<span class="container__result__item__type">гостиница</span>
 				<span class="container__result__item__price">от 4000 р.</span>
 				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<button class="container__result__item__button container__result__item__button--bron" type="submit">Забронировать</button>
+				<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
 				<div class="container__result__item__ratestars">4 stars</div>
-				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
-				<span class="container__result__item__amountrate">8,5</span>
+				<p class="container__result__item__rating">рейтинг: 
+				<span class="container__result__item__amountrate">8,5</span></p>
 			</div>
 			<div class="container__result__item">
 				<img class="container__result__item__img" src="img/desert.jpg" width="135" height="90" alt="Desert">
-				<h2 class="container__result__item__head">desert quail inn</h2>
+				<a href="#" class="container__result__item__head">desert quail inn</a>
 				<span class="container__result__item__type">мотель</span>
 				<span class="container__result__item__price">от 3000 р.</span>
 				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<button class="container__result__item__button container__result__item__button--bron" type="submit">Забронировать</button>
+				<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
 				<div class="container__result__item__ratestars">3 stars</div>
-				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
-				<span class="container__result__item__amountrate">8,9</span>
+				<p class="container__result__item__rating">рейтинг: <!--должен быть p-->
+				<span class="container__result__item__amountrate">8,9</span></p>
 			</div>
 			<div class="container__result__item">
 				<img class="container__result__item__img" src="img/villas.jpg" width="135" height="90" alt="Villas">
-				<h2 class="container__result__item__head">villas at poco diablo</h2>
+				<a href="#" class="container__result__item__head">villas at poco diablo</a>
 				<span class="container__result__item__type">апартаменты</span>
 				<span class="container__result__item__price">от 2000 р.</span>
 				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<button class="container__result__item__button container__result__item__button--bron" type="submit">Забронировать</button>
+				<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
 				<div class="container__result__item__ratestars">2 stars</div>
-				<span class="container__result__item__rating">рейтинг: </span><!--должен быть p-->
-				<span class="container__result__item__amountrate">9,2</span>
+				<p class="container__result__item__rating">рейтинг: <!--должен быть p-->
+				<span class="container__result__item__amountrate">9,2</span></p>
 			</div>
 		</section>
 	</main>
@@ -171,15 +178,17 @@
 				Твиттер
 			</a>
 			<a class="footer__social__logo footer__social__logo--facebook" href="https://www.facebook.com">
-				Фейсбук
+					Фейсбук
 			</a>
 			<a class="footer__social__logo footer__social__logo--youtube" href="https://youtube.com">
-				Ютуб
+					Ютуб
 			</a>
 		</ul>
-	    <p class="footer__copyright">
-	        Website by <a class="button" href="https://htmlacademy.ru/">html<br>
-	        academy</a>
-		</p>
-	</footer>
+			<p class="footer__copyright">
+		        Website by 
+	        	<a href="https://htmlacademy.ru/">
+		    		<img class="copyright" src="img/logo_name.png" width="115" height="41" alt="HTMLA">
+	        	</a>
+		   	</p>
+		</footer>
 </body>
