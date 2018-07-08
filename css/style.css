@@ -457,3 +457,71 @@ body.inner #filter-cost-day-max:focus {
 	background-color: #FFFFFF;
 	border: solid #e4e4e4 2px;
 }*/
+
+
+
+
+
+/*стили для сетки*/
+
+
+
+
+
+body {
+	background-image: url("../img/sedona-index-1200.jpg");
+	background-repeat: no-repeat;
+	width: 1200px;
+	margin: auto;
+	background-position: center top;
+}
+
+.main-navigation {
+	margin: 0;
+	padding: 0;
+	border: solid yellow 2px;
+}
+
+.site-navigation {
+	display: flex;
+	min-height: 56px;
+	justify-content: space-between;
+	border: solid black 2px;
+	margin: 0;
+	padding: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.main-header-logo {
+	margin: 0;
+  margin-left: -69px;
+  padding: 0;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+}
+
+.site-navigation li {
+	width: 150px;
+	padding-top: 14px;
+	margin: 0;
+  border: solid red 2px;
+  text-align: center;
+}
+
+.site-navigation li:nth-child(1) {
+	margin-left: 10px;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-left: 30px;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-right: 30px;
+}
+
+.site-navigation li:nth-child(4) {
+	margin-right: 5px;
+}
