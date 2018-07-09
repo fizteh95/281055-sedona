@@ -469,59 +469,210 @@ body.inner #filter-cost-day-max:focus {
 
 
 body {
-	background-image: url("../img/sedona-index-1200.jpg");
-	background-repeat: no-repeat;
 	width: 1200px;
-	margin: auto;
-	background-position: center top;
+  margin: 0 auto;
 }
 
 .main-navigation {
 	margin: 0;
 	padding: 0;
-	border: solid yellow 2px;
+	/*border: solid yellow 2px;*/
 }
 
 .site-navigation {
 	display: flex;
 	min-height: 56px;
-	justify-content: space-between;
-	border: solid black 2px;
+	justify-content: flex-start;
+	/*border: solid black 2px;*/
 	margin: 0;
 	padding: 0;
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
-.main-header-logo {
+/*.main-header-logo {
 	margin: 0;
   margin-left: -69px;
   padding: 0;
 	position: absolute;
 	top: 0px;
 	left: 50%;
-}
+}*/
 
 .site-navigation li {
 	width: 150px;
 	padding-top: 14px;
 	margin: 0;
-  border: solid red 2px;
+  /*border: solid red 2px;*/
   text-align: center;
+  padding: 0;
+  padding-top: 15px;
+  /*outline: 1px solid #666;*/
+  height: 41px;
 }
 
 .site-navigation li:nth-child(1) {
-	margin-left: 10px;
+	margin-left: 22px;
 }
 
 .site-navigation li:nth-child(2) {
-	margin-left: 30px;
+	margin-left: 93px;
 }
 
 .site-navigation li:nth-child(3) {
-	margin-right: 30px;
+	margin-left: 90px;
+  margin-top: -15px;
+  z-index: 1;
 }
 
 .site-navigation li:nth-child(4) {
-	margin-right: 5px;
+	margin-left: 92px;
+}
+
+.site-navigation li:nth-child(5) {
+  margin-left: 95px;
+}
+
+.wrap {
+  background-image: url("../img/sedona-index-1200.jpg");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+body .wrap .main-header, .container {
+  opacity: 0.5;
+}
+
+.container__introduction__back {
+  /*opacity: 0.5;*/
+  height: 506px;
+}
+
+.container__introduction {
+  /*border: solid black 2px;*/
+}
+
+.container__introduction__welcome {
+  position: relative;
+  /*margin-left: -229px;*/
+  top: -437px;
+  /*border: solid black 2px;*/
+  /*left: 50%;*/
+}
+
+.container__introduction__shape {
+  position: relative;
+  top: -419px;
+  /*border: solid black 2px;*/
+}
+
+.container__definition {
+  margin: 0 auto;
+  padding: 0;
+  /*border: solid black 2px;*/
+  margin-top: -365px;
+  width: 450px;
+}
+
+.definition__head {
+  margin-top: 27px;
+}
+
+.features {
+  margin-top: 51px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.features div {
+  min-width: 400px;
+  min-height: 255px;
+  height: 256px;
+  /*outline: solid black 2px;*/
+}
+
+.features .features__plushka {
+  height: 330px;
+  width: 400px;
+
+}
+
+.features img {
+  height: 256px;
+}
+
+
+.features__item {
+  width: 400px;
+}
+
+
+/*сделать картинки несжатыми!!!!*/
+
+
+.interest {
+  margin-top: 50px;
+}
+
+.interest__text {
+  margin: 0 auto;
+  width: 500px;
+}
+
+body .interest a.interest__map__a img {
+  margin: 0;
+  padding: 0; 
+  margin-top: 132px;
+  width: 1200px;
+  height: 468px;
+}
+
+.footer {
+  display: flex;
+  /*outline: solid black 2px;*/
+  height: 120px;
+}
+
+.footer p, ul {
+  /*outline: solid black 2px;*/
+}
+
+.footer__tag {
+  margin-left: 132px;
+  padding-top: 25px;
+}
+
+.footer__social {
+  margin-left: 230px;
+}
+
+.footer__copyright {
+  width: 210px;
+  margin-left: 200px;
+  vertical-align: center;
+  /*padding-top: 20px;*/
+}
+
+.interst__form {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  /*outline: solid black 2px;*/
+}
+
+.interst__form__div, .interst__form__head {
+  padding: 0;
+  margin: 0;
+}
+
+.interst__form__div {
+  height: 80px;
+}
+
+.interst__form__head {
+  vertical-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
