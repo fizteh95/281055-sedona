@@ -547,6 +547,7 @@ body .wrap .main-header, .container {
 .container__introduction__back {
   /*opacity: 0.5;*/
   height: 506px;
+  width: 100%;
 }
 
 .container__introduction {
