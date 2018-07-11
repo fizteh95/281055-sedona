@@ -65,19 +65,19 @@
 			</div>
             <img class="features__img features__img--left" src="img/canyon.jpg" width="800" height="400" alt="Canyon">
             <div class="features__item features__item--blue">
-				<h3 class="features__item__header">там есть мост дъявола</h3>
+				<h3 class="features__item__header">там есть<br>мост дъявола</h3>
 				<p class="features__item__number">-№2-</p>
 				<p class="features__item__text">да, по нему можно пройти! если конечно вы осмелитесь</p>
 			</div>
 			<div class="features__item features__item--gray">
 				<h3 class="features__item__header">небольшая площадь</h3>
 				<p class="features__item__number">-№3-</p>
-				<p class="features__item__text">все достопримечательности находятся очень близко</p>
+				<p class="features__item__text">все достопримечательности<br>находятся очень близко</p>
 			</div>
 			<div class="features__item features__item--gray">
 				<h3 class="features__item__header">красивая дорога</h3>
 				<p class="features__item__number">-№4-</p>
-				<p class="features__item__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+				<p class="features__item__text">ехать в седону из лас-вегаса совсем<br>не скучно!</p>
 			</div>
 			<div class="features__item features__item--gray">
 				<h3 class="features__item__header">мало туристов</h3>
@@ -88,53 +88,86 @@
    		<section class="interest">
    			<h2 class="interest__header">заинтересовались?</h2>
    			<p class="interest__text">укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			
+			<!-- тут была форма -->
+
+			<div class="interest__wrapper">
+				<div class="interst__form__div">
+	                <h2 class="interst__form__head">Поиск гостиницы в Седоне</h2>
+	            </div>
+				<form class="interst__form visually-hidden" method="post" action="https://echo.htmlacademy.ru">
+					<div class="data-zaezda">
+						<label for="interst__form__arrival">Дата заезда
+	                    	<input id="interst__form__arrival" type="text" placeholder="24 апреля 2017">
+	                	</label>
+					</div>
+	                <div class="data-viezda">
+	                	<label for="interst__form__leaving">Дата выезда
+	                    	<input id="interst__form__leaving" type="text" placeholder="4 июля 2017">
+	                	</label>
+	                </div>
+	                <div class="number-of">
+	                	<!-- <div class="num-of-adult">
+	                		<label for="interst__form__adult">Взрослые
+								<button class="visually-hidden-btn zaeb_btn" type="button">-</button>
+			                    	<input id="interst__form__adult" type="text" name="text" value="2">
+								<button class="visually-hidden-btn zaeb_btn" type="button">+</button>
+			                </label>
+	                	</div>
+	                	<div class="num-of-ch">
+	                		<label for="interst__form__children">Дети
+			                    <button class="visually-hidden-btn zaeb_btn" type="button">-</button>
+			                   		<input id="interst__form__children" type="text" name="text" value="0">
+								<button class="visually-hidden-btn zaeb_btn" type="button">+</button>
+			                </label>
+	                	</div> -->
+	                <div class="homepage-booking-form-grid">
+	                	<div class="homepage-booking-form-control">
+                            <label class="adult-label" for="homepage-booking-form-adults">Взрослые:</label>
+                            <div class="homepage-booking-form-number">
+                                <button type="button" class="minus"> = $0 ::before "Минус"</button>
+                                <input id="homepage-booking-form-adults" type="text" value="2">
+                                <button type="button" class="plus"> = $0 ::before "Плюс"</button>
+                            </div>
+                            <label class="child-label" for="homepage-booking-form-children">Дети:</label>
+                            <div class="homepage-booking-form-number">
+                                <button type="button" class="minus">= $0 ::before "Минус"</button>
+                                <input id="homepage-booking-form-children" type="text" value="0">
+                                <button type="button" class="plus"> = $0 ::before "Плюс"</button>
+                            </div>
+                        </div>
+		                
+	                </div>
+	            </div>
+	                <button class="visually-hidden-btn search-button" type="submit" name="search">Найти</button>
+	            </form>
+			</div>
 			<a class="interest__map__a" href="#">
 				<img src="img/map.jpg" width="1280" height="747" alt="Адреса гостиниц в Седоне">
 			</a>
-			<!-- тут была форма -->
+
    		</section>
 		<footer class="footer">
 			<p class="footer__tag">#visitsedona</p>
 			<ul class="footer__social">
 				<a class="footer__social__logo footer__social__logo--twitter" href="https://twitter.com">
-					Твиттер
+					<span class="v-h">Твиттер</span>
 				</a>
 				<a class="footer__social__logo footer__social__logo--facebook" href="https://www.facebook.com">
-					Фейсбук
+					<span class="v-h">Фейсбук</span>
 				</a>
 				<a class="footer__social__logo footer__social__logo--youtube" href="https://youtube.com">
-					Ютуб
+					<span class="v-h">Ютуб</span>
 				</a>
 			</ul>
-			<p class="footer__copyright">
-			    Website by 
+			<div class="footer__copyright">
+			    <span class="footer__copyright__text">Website by </span>
 			    <a href="https://htmlacademy.ru/">
 			        <img class="copyright" src="img/logo_name.png" width="115" height="41" alt="HTMLA">
 			    </a>
-		    </p>
+		    </div>
 		</footer>
-		<form class="interst__form" method="post" action="https://echo.htmlacademy.ru">
-                <div class="interst__form__div">
-                    <h2 class="interst__form__head">Поиск гостиницы в Седоне</h2>
-                </div>
-                <label for="interst__form__arrival">Дата заезда
-                    <input id="interst__form__arrival" type="date" name="date">
-                </label>
-                <label for="interst__form__leaving">Дата выезда
-                    <input id="interst__form__leaving" type="date" name="date">
-                </label>
-                <label for="interst__form__adult">Взрослые
-					<button type="button" href="#">-</button>
-                   <input id="interst__form__adult" type="text" name="text" value="2">
-					<button type="button" href="#">+</button>
-                </label>
-                <label for="interst__form__children">Дети
-                   <button type="button" href="#">-</button>
-                   <input id="interst__form__children" type="text" name="text" value="0">
-					<button type="button" href="#">+</button>
-                </label>
-                <button class="search-button" type="submit" name="search">Найти</button>
-            </form>
+		<!--  -->
 	</main>
 </div>
 </body>
