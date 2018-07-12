@@ -537,20 +537,23 @@ body {
 }
 
 .wrap {
-  /*background-image: url("../img/sedona-index-1200.jpg");
+  background-image: url("../img/sedona-index-1200.jpg");
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: top center;*/
+  background-position: top center;
 }
 
 body .wrap .main-header, .container {
-  /*opacity: 0.5;*/
+  opacity: 0.5;
 }
 
 .container__introduction__back {
   /*opacity: 0.5;*/
-  height: 506px;
+  height: 509px;
   width: 100%;
+  background-image: url("../img/background.jpg");
+  background-position: center -55px;
+  background-repeat: no-repeat;
 }
 
 .container__introduction {
@@ -560,14 +563,20 @@ body .wrap .main-header, .container {
 .container__introduction__welcome {
   position: relative;
   /*margin-left: -229px;*/
-  top: -437px;
+  top: -433px;
   /*border: solid black 2px;*/
   /*left: 50%;*/
 }
 
 .container__introduction__shape {
+  margin: 0 auto;
   position: relative;
-  top: -421px;
+  top: -415px;
+  left: 0px;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/Shape.png");
+  /*z-index: 2;*/
   /*border: solid black 2px;*/
 }
 
@@ -575,7 +584,7 @@ body .wrap .main-header, .container {
   margin: 0 auto;
   padding: 0;
   /*border: solid black 2px;*/
-  margin-top: -365px;
+  margin-top: -356px;
   width: 450px;
 }
 
@@ -607,6 +616,23 @@ body .wrap .main-header, .container {
   height: 256px;
 }
 
+.features__img--right {
+  width: 800px;
+  height: 256px;
+  position: relative;
+  background-image: url("../img/open_range.jpg");
+  background-repeat: no-repeat;
+  background-position: center -79px;
+}
+
+.features__img--left {
+  width: 800px;
+  height: 256px;
+  position: relative;
+  background-image: url("../img/canyon.jpg");
+  background-repeat: no-repeat;
+  background-position: center -76px;
+}
 
 .features__item {
   width: 400px;
@@ -771,27 +797,31 @@ body {
 	display: flex;
 	min-width: 180px;
 	padding: 0;
-	padding-left: 22px;
+	padding-left: 20px;
 	flex-wrap: wrap;
 }
 
 .footer__social__logo {
 	position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: rgb(144, 178, 208);
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
+  margin-left: 6px;
 }
 
-.footer__social__logo::before {
+/*.footer__social__logo::before {
 	content: "";
 	margin: 0;
 	padding: 0;
 	width: 46px;
 	height: 48px;
-	/*margin-left: 10px;*/
 	margin-top: 21px;
 	margin-left: 3px;
 	background-color: rgb(144, 178, 208);
 	display: inline-block;
-	/*background-image: url("../img/icon-2.png");
-	background-repeat: no-repeat;*/
 }
 
 .footer__social__logo:hover:before {
@@ -800,7 +830,7 @@ body {
 
 .footer__social__logo:active:before {
 	background-color: #6c94ba;
-}
+}*/
 
 .footer__copyright {
 	/*outline: solid black 2px;*/
@@ -948,7 +978,7 @@ input[type="radio"].visually-hidden {
 }
 
 .data-zaezda {
-	margin-top: 61px;
+	margin-top: 54px;
 }
 
 #interst__form__arrival, #interst__form__leaving {
@@ -958,6 +988,7 @@ input[type="radio"].visually-hidden {
 	padding-left: 15px;
 	display: inline-block;
 	width: 331px;
+  height: 38px;
 	position: relative;
 }
 
@@ -969,11 +1000,11 @@ input[type="radio"].visually-hidden {
 
 
 .data-viezda {
-	margin-top: 38px;
+	margin-top: 27px;
 }
 
 .number-of {
-	margin-top: 36px;
+	margin-top: 30px;
 	display: flex;
 }
 
@@ -1151,9 +1182,9 @@ input[type="radio"].visually-hidden {
 	border: none;
 }
 
-.data-zaezda::before {
+/*.data-zaezda::before {
 	content: "";
-	/*background-color: red;*/
+	background-color: red;
 	width: 21px;
 	height: 22px;
 	margin: 0;
@@ -1176,7 +1207,7 @@ input[type="radio"].visually-hidden {
 
 .data-viezda::before {
 	content: "";
-	/*background-color: red;*/
+	background-color: red;
 	width: 21px;
 	height: 22px;
 	margin: 0;
@@ -1196,4 +1227,47 @@ input[type="radio"].visually-hidden {
 .data-viezda:active:before {
 	background-image: url("../img/calendar-blue.png"); 
 }
+*/
 
+.calendar {
+  width: 38px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0);
+  background-image: url("../img/calendar-gray.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.calendar:hover {
+  background-image: url("../img/calendar-black.png"); 
+}
+
+.calendar:active {
+  background-image: url("../img/calendar-blue.png"); 
+}
+
+.data-zaezda {
+  /*outline: solid black 2px;*/
+  padding-top: 0px;
+  position: relative;
+}
+
+.data-zaezda label {
+  top: -13px;
+}
+
+.data-viezda {
+  /*outline: solid black 2px;*/
+  padding-top: 0px;
+  position: relative;
+}
+
+.data-viezda label {
+  top: -13px;
+}

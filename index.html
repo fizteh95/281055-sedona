@@ -36,11 +36,11 @@
 	</header>
 	<main class="container">
 	    <section class="container__introduction">
-	    	<img class="container__introduction__back" src="img/background.JPG" width="1200" height="773" alt="to the gorgeous">
+	    	<div class="container__introduction__back" width="1200" height="773"></div> 
 	        <img class="container__introduction__welcome" src="img/welcome.png" alt="to the gorgeous">
             <!-- <h1 class="container__sedona">Sedona</h1>
             <img class="container__introduction__because" src="img/сanyon_sucks.png" width="296" height="80" alt="because the grand canyon sucks!"> -->
-            <img class="container__introduction__shape" src="img/Shape.png" width="1200" height="57" alt="">
+            <div class="container__introduction__shape" width="1200" height="57"></div> 
 	        <p class="container__definition">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
     	</section>	
 		<h2 class="definition__head">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
@@ -50,7 +50,7 @@
 				<p class="features__item__number">-№1-</p>
 				<p class="features__item__text">седона - не аттракцион для туристов, там течет соя жизнь</p>
 			</div>
-			<img class="features__img features__img--right" src="img/open_range.jpg" width="800" height="401" alt="Open Range">
+			<div class="features__img features__img--right" width="800" height="401"></div>
 			<div class="features__plushka features__plushka--house">
 				<h3 class="features__plushka__header">жилье</h3>
 				<p class="features__plushka__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -63,7 +63,7 @@
 				<h3 class="features__plushka__header">сувениры</h3>
 				<p class="features__plushka__text">не только китайского, но и местного производства!</p>
 			</div>
-            <img class="features__img features__img--left" src="img/canyon.jpg" width="800" height="400" alt="Canyon">
+            <div class="features__img features__img--left" width="800" height="400"></div>
             <div class="features__item features__item--blue">
 				<h3 class="features__item__header">там есть<br>мост дъявола</h3>
 				<p class="features__item__number">-№2-</p>
@@ -100,11 +100,13 @@
 						<label for="interst__form__arrival">Дата заезда
 	                    	<input id="interst__form__arrival" type="text" placeholder="24 апреля 2017">
 	                	</label>
+	                	<button type="button" class="calendar"></button>
 					</div>
 	                <div class="data-viezda">
 	                	<label for="interst__form__leaving">Дата выезда
 	                    	<input id="interst__form__leaving" type="text" placeholder="4 июля 2017">
 	                	</label>
+	                	<button type="button" class="calendar"></button>
 	                </div>
 	                <div class="number-of">
 	                	<!-- <div class="num-of-adult">
