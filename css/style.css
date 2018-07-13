@@ -504,18 +504,18 @@ body {
 
 .site-navigation li {
 	width: 150px;
-	padding-top: 14px;
 	margin: 0;
   /*border: solid red 2px;*/
   text-align: center;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 14px;
   /*outline: 1px solid #666;*/
   height: 41px;
+  letter-spacing: 0.007em;
 }
 
 .site-navigation li:nth-child(1) {
-	margin-left: 22px;
+	margin-left: 23px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -523,28 +523,28 @@ body {
 }
 
 .site-navigation li:nth-child(3) {
-	margin-left: 90px;
+	margin-left: 88px;
   margin-top: -15px;
   z-index: 1;
 }
 
 .site-navigation li:nth-child(4) {
-	margin-left: 92px;
+	margin-left: 90px;
 }
 
 .site-navigation li:nth-child(5) {
-  margin-left: 95px;
+  margin-left: 100px;
 }
 
 .wrap {
-  background-image: url("../img/sedona-index-1200.jpg");
+  /*background-image: url("../img/sedona-index-1200.jpg");
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center;*/
 }
 
 body .wrap .main-header, .container {
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 .container__introduction__back {
@@ -810,7 +810,44 @@ body {
   padding: 0;
   margin-top: 21px;
   margin-left: 6px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
+.footer__social__logo--twitter {
+  background-image: url("../img/t.png");
+}
+
+.footer__social__logo--facebook {
+  background-image: url("../img/fb-icon.png");
+}
+
+.footer__social__logo--youtube {
+  background-image: url("../img/youtube.png");
+}
+
+.footer__social__logo--twitter:active {
+  background-image: url("../img/t-gray.png");
+}
+
+.footer__social__logo--facebook:active {
+  background-image: url("../img/fb-icon-gray.png");
+}
+
+.footer__social__logo--youtube:active {
+  background-image: url("../img/youtube-gray.png");
+}
+
+.footer__social__logo:hover {
+  background-color: #799cbd;
+
+}
+
+.footer__social__logo:active {
+  background-color: #6c94ba;
+}
+
+
 
 /*.footer__social__logo::before {
 	content: "";
@@ -860,7 +897,7 @@ body {
 	font-size: 0px;
 }
 
-.v-h:active:before {
+/*.v-h:active:before {
 	opacity: 0.3;
 }
 
@@ -868,13 +905,13 @@ body {
 	content: "";
 	margin: 0;
 	padding: 0;
-	/*background-color: red;*/
+	background-color: red;
 	display: inline-block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	background-repeat: no-repeat;
-	/*outline: solid red 2px;*/
+	outline: solid red 2px;
 }
 
 .footer__social__logo--twitter .v-h::before {
@@ -899,7 +936,7 @@ body {
 	margin-left: -10px;
 	margin-top: -11px;
 	background-image: url("../img/youtube.png");
-}
+}*/
 
 /*.interst__form label, button, input {
 	font-size: 0px;
@@ -963,9 +1000,11 @@ input[type="radio"].visually-hidden {
 .interst__form {
 	left: 0px;
 	position: absolute;
+  display: block;
 	width: 570px;
 	height: 395px;
 	background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 	/*outline: solid black 2px;*/
 }
 
@@ -1270,4 +1309,23 @@ input[type="radio"].visually-hidden {
 
 .data-viezda label {
   top: -13px;
+}
+
+.copyright {
+  width: 115px;
+  height: 41px;
+  background-image: url("../img/logo_name.png");
+}
+
+.copyright:hover {
+  background-image: url("../img/logo_name_push.png");
+}
+
+.copyright:active {
+  background-image: url("../img/logo_name_target.png");
+}
+
+
+.homepage-booking-form-hide {
+    display: none;
 }
