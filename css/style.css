@@ -179,6 +179,8 @@ body.inner .main-header {
 body.inner .filter .filter-checkbox {
   font-size: 14px;
   line-height: 21px;
+  font-weight: normal;
+  list-style: none;
 }
 
 body.inner .filter-infrastructure {
@@ -1328,4 +1330,312 @@ input[type="radio"].visually-hidden {
 
 .homepage-booking-form-hide {
     display: none;
+}
+
+
+
+
+
+
+/*для иннера*/
+
+
+
+
+
+body.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+body.inner .wrap .main-header, .container, .footer {
+  opacity: 0.5;
+}
+
+
+.inner__wrap {
+  background-image: url("../img/sedona-hotels-1200.jpg");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+body.inner .filter_background {
+  height: 217px;
+  width: 1200px;
+  background-image: url("../img/filter_background.jpg");
+  /*margin: 0;*/
+  padding: 0;
+}
+
+body.inner .filter {
+  display: flex;
+  justify-content: flex-start;
+  /*outline: solid black 2px;*/
+
+  height: 217px;
+  /*margin: 0;*/
+  padding: 0;
+}
+
+body.inner fieldset {
+  padding: 0;
+}
+
+body.inner .filter-infrastructure, body.inner .filter-type-housing {
+  width: 184px;
+  margin-left: 69px;
+  /*padding-top: 30px;*/
+  position: relative;
+}
+
+body.inner legend.filter-title {
+  padding-top: 27px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.filter-input-checkbox[type="checkbox"] {
+  display: none;
+  position: relative;
+}
+
+body.inner .filter-input-checkbox[type="checkbox"] + label::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  top: 8px;
+  left: -14px;
+}
+
+body.inner .filter-infrastructure li {
+  margin-bottom: 17px;
+  margin-left: -24px;
+}
+
+body.inner .filter-type-housing li {
+  margin-bottom: 17px;
+  margin-left: -23px;
+}
+
+body.inner .filter-type-housing .filter-input-checkbox[type="checkbox"] + label::before {
+  left: -15px;
+}
+
+body.inner .filter-checkbox input[type="checkbox"]:checked~label::before {
+    background: url("../img/checkbox-on.png") no-repeat;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 0; /* длЯ демо */
+  margin-top: 27px;
+  margin-left: 300px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 34px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.container__find {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  height: 53px;
+  margin-bottom: 20px;
+}
+
+.container__find h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+.container__find h1 {
+  margin-bottom: -3px;
+  margin-left: 71px;
+}
+
+.container__find p {
+  margin-left: 49px;
+}
+
+.container__find__arrowup, .container__find__arrowdown {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.container__find ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
+  margin-left: 40px;
+}
+
+.container__find li {
+  margin-right: 32px;
+}
+
+.find_button {
+  width: 11px;
+  height: 10px;
+  margin-right: 12px;
+  margin-bottom: 4px;
+  border: none;
+  background-color: rgba( 255, 255, 255, 0);
+}
+
+.container__find__arrowup {
+  margin-left: 473px;
+  background-image: url("../img/icon-up-dir.png");
+}
+
+.container__find__arrowdown {
+  background-image: url("../img/icon-down-dir.png");
+}
+
+.container__result {
+  margin: 0;
+  padding: 0;
+  margin-top: 33px;
+  outline: solid red 2px;
+}
+
+body.inner .footer {
+  position: relative;
 }
