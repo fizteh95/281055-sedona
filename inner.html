@@ -12,8 +12,8 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li class="site-navigation__info site-navigation--active">
-					<a href="#">Информация</a>
+				<li class="site-navigation__info">
+					<a href="index.html">Информация</a>
 				</li>
 				<li class="site-navigation__photo">
 					<a href="#">Фото и видео</a>
@@ -26,7 +26,7 @@
 				<li class="site-navigation__map">
 					<a href="#">Карта штата</a>
 				</li>
-				<li class="site-navigation__hotels">
+				<li class="site-navigation__hotels site-navigation--active">
 					<a href="inner.html">Гостиницы</a>
 				</li>
 			</ul>
@@ -136,58 +136,82 @@
 		<section class="container__result">
 			<div class="container__result__item">
 				<img class="container__result__item__img" src="img/amara.jpg" width="135" height="90" alt="Amara">
-				<a href="#" class="container__result__item__head">amara resort & spa</a>
-				<span class="container__result__item__type">гостиница</span>
-				<span class="container__result__item__price">от 4000 р.</span>
-				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
-				<div class="container__result__item__ratestars">4 stars</div>
-				<p class="container__result__item__rating">рейтинг: 
-				<span class="container__result__item__amountrate">8,5</span></p>
+				<div class="name_container">
+					<a href="#" class="container__result__item__head">amara resort & spa</a>
+					<div class="type_of_hotel">
+						<span class="container__result__item__type">гостиница</span>
+						<span class="container__result__item__price">от 4000 р.</span>
+					</div>
+					<div class="button_div">
+						<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
+						<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
+					</div>
+				</div>
+				<div class="container__result__item__ratestars n4_stars"></div>
+				<div class="rating_div">
+					<p class="container__result__item__rating">рейтинг: 
+					<span class="container__result__item__amountrate">8,5</span></p>
+				</div>
 			</div>
 			<div class="container__result__item">
 				<img class="container__result__item__img" src="img/desert.jpg" width="135" height="90" alt="Desert">
-				<a href="#" class="container__result__item__head">desert quail inn</a>
-				<span class="container__result__item__type">мотель</span>
-				<span class="container__result__item__price">от 3000 р.</span>
-				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
-				<div class="container__result__item__ratestars">3 stars</div>
-				<p class="container__result__item__rating">рейтинг: <!--должен быть p-->
-				<span class="container__result__item__amountrate">8,9</span></p>
+				<div class="name_container">
+					<a href="#" class="container__result__item__head">desert quail inn</a>
+					<div class="type_of_hotel">
+						<span class="container__result__item__type">мотель</span>
+						<span class="container__result__item__price">от 3000 р.</span>
+					</div>
+					<div class="button_div">
+						<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
+						<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
+					</div>
+				</div>
+				<div class="container__result__item__ratestars n3_stars"></div>
+				<div class="rating_div">
+					<p class="container__result__item__rating">рейтинг: <!--должен быть p-->
+					<span class="container__result__item__amountrate">8,9</span></p>
+				</div>
 			</div>
 			<div class="container__result__item">
 				<img class="container__result__item__img" src="img/villas.jpg" width="135" height="90" alt="Villas">
-				<a href="#" class="container__result__item__head">villas at poco diablo</a>
-				<span class="container__result__item__type">апартаменты</span>
-				<span class="container__result__item__price">от 2000 р.</span>
-				<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
-				<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
-				<div class="container__result__item__ratestars">2 stars</div>
-				<p class="container__result__item__rating">рейтинг: <!--должен быть p-->
-				<span class="container__result__item__amountrate">9,2</span></p>
+				<div class="name_container">
+					<a href="#" class="container__result__item__head">villas at poco diablo</a>
+					<div class="type_of_hotel">
+						<span class="container__result__item__type">апартаменты</span>
+						<span class="container__result__item__price">от 2000 р.</span>
+					</div>
+					<div class="button_div">
+						<a class="container__result__item__button container__result__item__button--more" href="#">подробнее</a>
+						<button class="container__result__item__button container__result__item__button--bron" type="submit"><span>Забронировать</span></button>
+					</div>
+				</div>
+				<div class="container__result__item__ratestars n2_stars"></div>
+				<div class="rating_div">
+					<p class="container__result__item__rating">рейтинг: <!--должен быть p-->
+					<span class="container__result__item__amountrate">9,2</span></p>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
-		<p class="footer__tag">#visitsedona</p>
-		<ul class="footer__social">
-			<a class="footer__social__logo footer__social__logo--twitter" href="https://twitter.com">
-				Твиттер
-			</a>
-			<a class="footer__social__logo footer__social__logo--facebook" href="https://www.facebook.com">
-					Фейсбук
-			</a>
-			<a class="footer__social__logo footer__social__logo--youtube" href="https://youtube.com">
-					Ютуб
-			</a>
-		</ul>
-			<p class="footer__copyright">
-		        Website by 
-	        	<a href="https://htmlacademy.ru/">
-		    		<img class="copyright" src="img/logo_name.png" width="115" height="41" alt="HTMLA">
-	        	</a>
-		   	</p>
+			<p class="footer__tag">#visitsedona</p>
+			<ul class="footer__social">
+				<a class="footer__social__logo footer__social__logo--twitter" href="https://twitter.com">
+					<span class="v-h">Твиттер</span>
+				</a>
+				<a class="footer__social__logo footer__social__logo--facebook" href="https://www.facebook.com">
+					<span class="v-h">Фейсбук</span>
+				</a>
+				<a class="footer__social__logo footer__social__logo--youtube" href="https://youtube.com">
+					<span class="v-h">Ютуб</span>
+				</a>
+			</ul>
+			<div class="footer__copyright">
+			    <span class="footer__copyright__text">Website by </span>
+			    <a href="https://htmlacademy.ru/">
+			        <div class="copyright" width="115" height="41"></div>
+			    </a>
+		    </div>
 		</footer>
 </div>
 </body>
